@@ -1,0 +1,355 @@
+/* body */
+
+body{
+    margin: 0;
+    font-family: system-ui;
+    background-color: snow;
+}
+
+/* header & Autor*/
+
+.kopf{
+    background-color: #a8e4f3;
+    color:white;
+    background-image: url("../bilder/headerimg.jpg");
+    text-align: right;
+    background-size: cover ;
+    background-blend-mode: multiply;
+    padding-top: 300px;
+    padding-bottom: 220px;
+    background-position: center;
+    background-attachment: fixed;
+
+}
+
+.kopf--titel {
+    margin: 0;
+    font-size: 4vw;
+    max-width: 80%;
+    padding-top: 290px;
+
+}
+
+.kopf--schrift{
+    max-width: 80%;
+    font-size: 1vw;
+    margin-left: 0px;
+}
+
+
+.utitle {
+    position: absolute;
+    bottom: 10px;
+    left: 50%;
+    height: 10vh;
+    transform: translateX(-50%) translateY(35%);
+
+    padding: 10px;
+    max-width: 90%;
+    text-align: center;
+    width: 1980px;
+    background-color: snow;
+
+
+}
+
+.border{
+    border-top: solid 2px grey;
+    width: 50%;
+}
+
+.schriftsteller {
+    display: flex; /* Flexbox für flexible Anordnung */
+    align-items: center; /* Vertikale Ausrichtung zentrieren */
+    justify-content: center; /* Horizontale Ausrichtung zentrieren */
+    flex-wrap: wrap; /* Umbruch erlauben, wenn der Platz nicht ausreicht */
+    text-align: center; /* Text horizontal zentrieren */
+    margin-top: 15px; /* Etwas weniger Abstand oben */
+    font-style: italic;
+
+}
+
+.schriftsteller img {
+    border-radius: 50%;
+    border: solid 5px;
+    width: 90px; /* Geringfügige Anpassung der Bildbreite */
+    height: auto; /* Automatische Anpassung der Höhe */
+    margin-right: 15px; /* Geringerer Abstand zwischen Bild und Text */
+}
+
+/* CSS für Page Info */
+
+.container-info {
+    display: grid;
+    grid-template-columns: 1fr 2fr 2fr 1fr;
+    grid-template-areas:
+    "... image text ...";
+
+}
+
+.container-info img{
+    width: 100%;
+}
+
+.box-shadow{
+    box-shadow: 0 0 30px 10px grey;
+}
+
+.item-1{
+    grid-area: image;
+}
+
+.item-2{
+    grid-area: text;
+}
+
+/* lead text */
+
+.lead {
+    width: 600px;
+    margin-top: 50px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.lead--text{
+    padding-right: 20px;
+    line-height: 1.8;
+    font-size: 16px;
+}
+video{
+    width: 100%;
+    height: auto;
+}
+
+/* Bilder */
+
+.bilder {
+    padding-bottom: 50px;
+    display: flex;
+    flex-direction: column;
+    max-width: 80%;
+    padding-left: 150px;
+    padding-right: 90px;
+}
+
+.container {
+    display: flex;
+    justify-content: space-between; /* Ändern Sie dies je nach Ihren Layoutpräferenzen */
+}
+
+.icon-text-container {
+    display: flex;
+    align-items: center;
+    margin-left: 40px;
+    margin-bottom: 30px;
+    margin-top: 30px;
+    font-family: 'Dialog';
+    font-size: x-large;
+}
+
+
+.category {
+    flex: 1;
+
+    position: relative;
+    display: inline-block;
+    padding: 10px;
+    align-items: center;
+    text-align: center;
+    box-sizing: border-box; /* Berücksichtigen Sie das Padding in der maximalen Breite */
+}
+.category img {
+    width: 100%;
+    height: 15vw;
+    object-fit: cover;
+    margin-top: 20px;
+}
+
+.category figcaption{
+    text-align: center;
+    font-weight: bold;
+}
+
+
+.selection0{
+    padding-bottom: 50px;
+    display: flex;
+    flex-direction: column;
+}
+
+.selection1 {
+    text-align: center;
+
+}
+
+.cards {
+    padding-right: 50px;
+    padding-left: 50px;
+    display: flex;
+    justify-content: center;
+    margin: 0 auto;
+    position: relative;
+}
+
+
+
+.fav1 {
+    display: flex;
+    align-items: center;
+    padding-left: 70px;
+}
+
+.favi {
+    font-weight: bold;
+    margin-left: 10px;
+}
+
+
+/* footer */
+
+.footer {
+    background: url('../bilder/footerhg.jpg') center/cover no-repeat;
+    color: white;
+    text-align: center;
+    padding: 100px;
+    margin-top: 80px;
+
+}
+
+footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.footer h2 {
+    font-size: 2em;
+}
+
+.footer p {
+    max-width: 600px;
+    margin: 20px auto;
+}
+
+.footer form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.footer label {
+    margin-bottom: 8px;
+}
+
+.footer input {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 16px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+.footer button {
+    background-color: #4caf50;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s ease;
+}
+
+.footer button:hover {
+    background-color: #45a049;
+}
+
+/*responsive */
+
+
+@media screen and (max-width: 768px) {
+    .kopf--titel {
+        font-size: 6vw;
+    }
+
+    .kopf--schrift {
+        font-size: 2vw;
+    }
+
+    .container-info {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr;
+        grid-template-areas:
+   " image "
+    "text ";
+
+    }
+
+
+    .ueberschrift{
+        padding-left:30px;
+        padding-right:30px;
+    }
+
+    .lead--text{
+        font-size: 3vw;
+        padding-left:30px;
+        padding-right:30px;
+    }
+
+    .container {
+        flex-direction: column; /* Ändere die Anordnung der Kategorien zu einer Spalte */
+        align-items: center;
+    }
+
+    .category {
+        flex:1;
+        margin: 10px 0;
+        text-align: center;
+    }
+
+    .category img {
+        width: 70%;
+        height: auto;
+        margin-top: 20px;
+    }
+
+    .category figcaption {
+        text-align: center;
+        margin-top: 10px;
+    }
+
+
+    .Bilder {
+        flex-direction: column;
+        align-items: center; / Zentriert die Kinder horizontal /
+    }
+
+    .selection1 {
+        margin-top: 20px;
+    }
+
+}
+
+
+@media screen and (max-width: 480px) {
+
+
+    .kopf--titel {
+        font-size: 8vw;
+    }
+
+    .kopf--schrift {
+        font-size: 3vw;
+    }
+
+    .bilder {
+        max-width: 100%;
+    }
+}
+
+
+
+
